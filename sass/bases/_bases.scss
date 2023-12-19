@@ -1,0 +1,24 @@
+/////////////////////////////////////////////////////////////////////       VARIABLES
+/// 
+$detail-size: clamp(0.8125rem, 0.7564rem + 0.2332vw, 1.0625rem); //min fsz:13px max: 17
+
+/////////////////////////////////////////////////////////////////////       HEADERS &n TEXTS
+/// Clamp inputs        min vw 385 -- max vw 2100   
+h1 {
+    font-size: clamp(5rem, 4.4388rem + 2.3324vw, 7.5rem); //min fsz:80px max: 120
+    font-family: 'Libre Baskerville', serif;
+}
+h2 { 
+    font-size: clamp(3.75rem, 3.4694rem + 1.1662vw, 5rem);  //min fsz:60px max: 80
+    font-family: 'Raleway', sans-serif;
+}
+h3 {
+    font-size: clamp(1.875rem, 1.7347rem + 0.5831vw, 2.5rem); //min fsz:30px max: 40
+    font-family: 'Libre Baskerville', serif;
+}
+p, div {
+    font-size: clamp(1.25rem, 1.1097rem + 0.5831vw, 1.875rem); //min fsz:20px max: 30
+    font-family: 'Raleway', sans-serif;
+}
+
+
