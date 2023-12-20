@@ -1,10 +1,20 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////       VARIABLES
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////       VARIABLES & MIXINS
 
 $detail-size: clamp(0.8125rem, 0.7564rem + 0.2332vw, 1.0625rem); //min fsz:13px max: 17
 $bleu : #00617F;
 $pale : #B8C9E1;
 $blanc : #FEFE;
 $noir : #131413;
+
+@mixin shadow-card {
+    background: rgba(254,254,254,0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(254,254,254,0.05);
+    padding: 2vmin;
+    border-radius: 2rem;
+}
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////       HEADERS & TEXTS
 /// Clamp inputs        min vw 385 -- max vw 2100   
@@ -14,8 +24,9 @@ h1 {
     font-family: 'Libre Baskerville', serif;
 }
 h2 { 
-    font-size: clamp(5.625rem, 5.4847rem + 0.5831vw, 6.25rem);  //min fsz:100px max: 120
+    font-size: clamp(3.75rem, 3.4694rem + 1.1662vw, 5rem);  //min fsz:100px max: 120
     font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 h3 {
     font-size: clamp(1.875rem, 1.7347rem + 0.5831vw, 2.5rem); //min fsz:30px max: 40
@@ -32,9 +43,20 @@ p, div {
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+main {
+    background: url("http://localhost/portfolio/wp-content/uploads/2023/12/doodad2.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
 section {    
-    height: calc(100vh - 6vmax); 
-    margin: 3vmax 6vmax;
+    height: calc(100vh - 10vmax);
+    width: calc(100vw - 12vmax);
+    padding: 5vmax 6vmax;    
 }
 
 h2 {
