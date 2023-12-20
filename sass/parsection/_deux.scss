@@ -1,0 +1,16 @@
+section.s2 {
+    display: flex;
+    column-gap: 2vmax;
+
+    &>* {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+    .gauche {
+        p {
+            margin-left: 2vmax;
+            text-align: justify;
+        }
+    }
+}

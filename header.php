@@ -5,40 +5,10 @@
     <?php wp_head() ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php bloginfo('name') ?> </title>
+    <title><?php bloginfo('name') ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- <header>
-        <div class="mainmenu">
-            <h1 class='titre'>
-                <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-            </h1>
-            <a href="javascript:void(0);" class="hamnu" id="hamnu" onclick="ouvrirMenu()"><svg width="64px" height="64px" stroke-width="1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#205c70">
-                    <path d="M3 5H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M3 19H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </a>
-        </div>
-        <?php
-        wp_nav_menu(array(
-            "theme_location" => "main-menu",
-            "container" => "nav"
-        )); ?>
-    </header>
-
-    <script>
-        function ouvrirMenu() {
-            var z = document.getElementsByClassName("menu");
-            var x = z[0];
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script> -->
