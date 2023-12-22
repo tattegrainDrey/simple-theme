@@ -61,6 +61,10 @@ section {
     height: calc(100vh - 10vmax);
     width: calc(100vw - 12vmax);
     padding: 5vmax 6vmax;
+    &.single {
+        height: calc(100vh - 7vmax);
+        padding: 2vmax 6vmax 5vmax;
+    }
     &.s2, &.s4 {
         color: $noir;
     }
