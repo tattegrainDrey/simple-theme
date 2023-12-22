@@ -5,19 +5,25 @@ section.s3 {
 
     .insider {
         display: flex;
+        justify-content: center;
 
         .gauche {
-            width: 50vw;
+            display: flex;
+            column-gap: 7vw;
+            //width: 50vw;
             h3 {
                 margin: 2vmin 0 1vmin;
             }
             .logo {
                 display: flex;
+                flex-direction: column;
+                row-gap: 1vw;
                 flex-wrap: wrap;
-                column-gap: 3vmin;
+                //column-gap: 3vmin;
                 align-items: center;
                 text-align: center;
                 figure {
+                    flex: 0 0;
                     img {
                         width: 10vmin;
                         filter: grayscale(100);
@@ -44,23 +50,7 @@ section.s3 {
         }
 
         .droite {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 15vw;
-            img {
-                position: absolute;
-                max-width: 33vmax;
-            }
-            img:first-of-type {
-                top: 20px;
-                rotate: -5deg;
-                align-self: center;
-            }
-            img:last-of-type {
-                bottom: 20px;
-                align-self: center;
-            }
+            display: none;
         }
     }
 

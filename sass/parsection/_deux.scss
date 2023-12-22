@@ -1,26 +1,29 @@
 section.s2 {
     display: flex;
-    column-gap: 2vmax;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        white-space: nowrap;
+    }
 
-    &>* {
+    .gauche {
         display: flex;
         flex-direction: column;
-        width: 50vw;
         margin: 2vmax 0;
-    }
-    .gauche {
         row-gap: 4vmin;
         p {
-            margin-left: 10vmax;
             text-align: justify;
             @include shadow-card;
+            width: 80vw;
         }
     }
     .droite {
-        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 2vmax 0;
+        row-gap: 4vmin;
         img {
-            position: absolute;
-            max-width: 33vmax;
+            max-width: 20vmax;
         }
         img:first-of-type {
             top: 20px;

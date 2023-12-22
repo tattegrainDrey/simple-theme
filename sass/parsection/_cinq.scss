@@ -6,8 +6,8 @@ section.s5 {
     justify-content: center;
     align-items: center;
     &>* {
-        font-size: 10vmin;
         white-space: nowrap;
+        font-size: initial;
     }
     span {
         align-self: flex-end;

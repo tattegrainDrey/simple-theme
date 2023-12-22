@@ -1,5 +1,4 @@
 section.single {
-    height: fit-content;
 
     .portfolio.item {
         display: flex;
@@ -8,7 +7,6 @@ section.single {
 
         h3 {
             text-align: center;
-            white-space: nowrap;
         }
 
         img {

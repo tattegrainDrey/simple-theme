@@ -6,6 +6,7 @@ section.s1 {
     background-color: $bleu;
     color: $pale;
     text-shadow: .2rem .2rem .1rem $bleu;
+    text-align: center;
 
     h1 {
         grid-row: 1/2;
@@ -17,6 +18,7 @@ section.s1 {
         z-index: 0;
         rotate: 12deg;
         justify-self: center;
+        width: 80vmin;
     }
     div {
         z-index: 1;
@@ -28,7 +30,6 @@ section.s1 {
         margin-top: 20vmin;
 
         h2 {
-            font-size: clamp(7.5rem, 7.2194rem + 1.1662vw, 8.75rem);
             font-weight: 700;
         }
     }

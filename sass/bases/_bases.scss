@@ -20,17 +20,17 @@ $noir : #131413;
 /// Clamp inputs        min vw 385 -- max vw 2100   
 
 h1 {
-    font-size: clamp(7.5rem, 7.2194rem + 1.1662vw, 8.75rem); //min fsz:120px max: 140
+    font-size: clamp(3rem, 1.7092rem + 5.3644vw, 8.75rem); //min fsz:48px max: 140
     font-family: 'Libre Baskerville', serif;
 }
 
 h2 {
-    font-size: clamp(3.75rem, 3.4694rem + 1.1662vw, 5rem); //min fsz:100px max: 120
+    font-size: clamp(2.375rem, 1.2245rem + 4.7813vw, 7.5rem);//min fsz:38px max: 120
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
 
-h3 {
+h3,span,q{
     font-size: clamp(1.875rem, 1.7347rem + 0.5831vw, 2.5rem); //min fsz:30px max: 40
     font-family: 'Libre Baskerville', serif;
 }
@@ -58,15 +58,13 @@ main {
 }
 
 section {
-    height: calc(100vh - 10vmax);
-    width: calc(100vw - 12vmax);
-    padding: 5vmax 6vmax;
+    height: calc(100vh - 10vh);
+    width: calc(100vw - 12vw);
+    padding: 5vh 6vw;
 
     &.single {
         height: calc(100vh - 7vmax);
-        padding: 2vmax 6vmax 5vmax;
     }
-
     &.s2,
     &.s4 {
         color: $noir;
@@ -89,6 +87,6 @@ footer {
     justify-content: center;
     background-color: $pale;
     .min {
-        font-size:medium
+        font-size:small;
     }
 }
