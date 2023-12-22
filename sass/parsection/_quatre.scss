@@ -1,0 +1,63 @@
+section.s4 {
+    .carousel-container {
+        display: flex;
+        align-items: center;
+        column-gap: .8vmax;
+        margin-top: 10vmax;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &>button {
+            border: initial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+        }
+
+        &>button:hover svg path {
+            stroke: $pale;
+        }
+
+        .carousel-cont {
+            overflow: hidden;
+            width: 100%;
+
+            .carousel {
+                display: flex;
+                column-gap: 4vw;
+                margin: 2rem 0;
+                overflow: visible;
+                transition: .5s ease-in-out all;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 2rem;
+                    align-items: center;
+                    text-align: center;
+                    flex: 0 0 21vw;
+                    height: 30vmin;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: $bleu;
+                    @include shadow-card;
+                    transition: all .5s;
+
+                    .wp-post-image {
+                        width: 10rem;
+                        height: auto;
+                    }
+                }
+                .item:hover {
+                    background: rgba(0,97,127, 0.7);
+                    -webkit-backdrop-filter: blur(3px);
+                    backdrop-filter: blur(3px);
+                    color: $noir;
+                }
+            }
+        }
+    }
+
+}

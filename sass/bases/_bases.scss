@@ -7,10 +7,10 @@ $blanc : #FEFE;
 $noir : #131413;
 
 @mixin shadow-card {
-    background: rgba(254,254,254,0.1);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(254,254,254,0.05);
+    background: rgba(0,97,127, 0.3);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(184, 201, 225, 0.15);
     padding: 2vmin;
     border-radius: 2rem;
 }
@@ -23,16 +23,20 @@ h1 {
     font-size: clamp(7.5rem, 7.2194rem + 1.1662vw, 8.75rem); //min fsz:120px max: 140
     font-family: 'Libre Baskerville', serif;
 }
-h2 { 
-    font-size: clamp(3.75rem, 3.4694rem + 1.1662vw, 5rem);  //min fsz:100px max: 120
+
+h2 {
+    font-size: clamp(3.75rem, 3.4694rem + 1.1662vw, 5rem); //min fsz:100px max: 120
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
+
 h3 {
     font-size: clamp(1.875rem, 1.7347rem + 0.5831vw, 2.5rem); //min fsz:30px max: 40
     font-family: 'Libre Baskerville', serif;
 }
-p, div {
+
+p,
+div {
     font-size: clamp(1.25rem, 1.1097rem + 0.5831vw, 1.875rem); //min fsz:20px max: 30
     font-family: 'Raleway', sans-serif;
 }
@@ -42,19 +46,29 @@ p, div {
     margin: 0;
     padding: 0;
 }
+
 body {
     overflow-x: hidden;
 }
+
 main {
     background: url("http://localhost/portfolio/wp-content/uploads/2023/12/doodad2.png");
     background-repeat: repeat;
     background-attachment: fixed;
 }
-section {    
+
+section {
     height: calc(100vh - 10vmax);
     width: calc(100vw - 12vmax);
-    padding: 5vmax 6vmax;    
+    padding: 5vmax 6vmax;
+    &.s2, &.s4 {
+        color: $noir;
+    }
+    &.s1, &.s3, &.s5{
+        color: $pale;
+    }
 }
+
 h2 {
     text-transform: uppercase;
 }

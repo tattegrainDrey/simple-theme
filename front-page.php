@@ -1,4 +1,11 @@
 <?php get_header() ?>
+<?php
+    $args_port = array(
+        'category_name' => 'portfolio',
+        'posts_per_page' => -1, // Display all posts from the tag.
+    );
+    $query_3d = new WP_Query($args_port);
+?>
 <main>
     <section class="s1">
         <h1>D.A. Tattegrain</h1>
@@ -101,20 +108,27 @@
     </section>
     <section class="s4">
         <h2>Mon Portfolio</h2>
-        <div class="carousel-container img3d">
+        <div class="carousel-container">
             <button class="prev-button">
-                <svg width="64px" height="64px" viewBox="0 0 24 24" stroke-width="0.6" fill="none" xmlns="http://www.w3.org/2000/svg" color="#205c70">
+                <svg width="64px" height="64px" viewBox="0 0 24 24" stroke-width="0.6" fill="none" xmlns="http://www.w3.org/2000/svg" color="#131413">
                     <path d="M13 8.5L9.5 12L13 15.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
             </button>
             <div class="carousel-cont">
                 <div class="carousel">
-
+                    <?php
+                        while ($query_3d->have_posts()) {
+                            $query_3d->the_post(); ?>
+                            <a href="<?php the_permalink(); ?>" class="item">
+                                <?php the_post_thumbnail() ?>
+                                <h4> <?php the_title(); ?> </h4>
+                            </a>
+                        <?php } ?>
                 </div>
             </div>
             <button class="next-button">
-                <svg width="64px" height="64px" viewBox="0 0 24 24" stroke-width="0.6" fill="none" xmlns="http://www.w3.org/2000/svg" color="#205c70">
+                <svg width="64px" height="64px" viewBox="0 0 24 24" stroke-width="0.6" fill="none" xmlns="http://www.w3.org/2000/svg" color="#131413">
                     <path d="M11 8.5L14.5 12L11 15.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -125,4 +139,64 @@
         <q>Art is a line around your thoughts.</q><span> -Gustav Klimt</span>
     </section>
 </main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const carouselContainers = document.querySelectorAll(".carousel-container");
+
+        carouselContainers.forEach((carouselContainer) => {
+            const carousel = carouselContainer.querySelector(".carousel");
+            let position = 0;
+            const items = carousel.querySelectorAll(".item");
+            //const item = $(".projet:first").html();
+            let projetWidth = items[0].offsetWidth;
+            const totalItems = items.length;
+            let parentWidth = carousel.scrollWidth;
+            let parent = carousel.offsetWidth;
+            const espace = totalItems - 1;
+            console.log("ScrollWidth : " + parentWidth);
+            console.log("OffsetWidth : " + parent);
+            console.log("ClientWidth : " + carousel.clientWidth);
+            console.log("Longueur 1 : " + projetWidth);
+            console.log("Nb items" + espace);
+            let width = (((parentWidth - (projetWidth * totalItems)) / espace) + parentWidth) / totalItems;
+
+            function recalculation() {
+                projetWidth = items[0].offsetWidth;
+                parentWidth = carousel.scrollWidth;
+                parent = carousel.offsetWidth;
+                width = (((parentWidth - (projetWidth * totalItems)) / espace) + parentWidth) / totalItems;
+            }
+
+            window.addEventListener('resize', recalculation);
+            recalculation();
+
+            console.log("Longueur: " + width);
+
+            const prevButton = carouselContainer.querySelector(".prev-button");
+            const nextButton = carouselContainer.querySelector(".next-button");
+
+            prevButton.addEventListener("click", () => {
+                position += width;
+                if (position > 0) {
+                    position = -width * (totalItems - 1);
+                }
+                updateCarousel();
+            });
+
+            nextButton.addEventListener("click", () => {
+                position -= width;
+                if (position < -width * (totalItems - 1)) {
+                    position = 0;
+                }
+                updateCarousel();
+            });
+
+            function updateCarousel() {
+                carousel.style.transform = `translateX(${position}px)`;
+            }
+        });
+    });
+</script>
+
 <?php get_footer() ?>

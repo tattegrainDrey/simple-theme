@@ -27,7 +27,8 @@ h3 {
   font-family: "Libre Baskerville", serif;
 }
 
-p, div {
+p,
+div {
   font-size: clamp(1.25rem, 1.1097rem + 0.5831vw, 1.875rem);
   font-family: "Raleway", sans-serif;
 }
@@ -51,6 +52,12 @@ section {
   height: calc(100vh - 10vmax);
   width: calc(100vw - 12vmax);
   padding: 5vmax 6vmax;
+}
+section.s2, section.s4 {
+  color: #131413;
+}
+section.s1, section.s3, section.s5 {
+  color: #B8C9E1;
 }
 
 h2 {
@@ -108,10 +115,10 @@ section.s2 .gauche {
 section.s2 .gauche p {
   margin-left: 10vmax;
   text-align: justify;
-  background: rgba(254, 254, 254, 0.1);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(254, 254, 254, 0.05);
+  background: rgba(0, 97, 127, 0.3);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(184, 201, 225, 0.15);
   padding: 2vmin;
   border-radius: 2rem;
 }
@@ -190,6 +197,66 @@ section.s3 .insider .droite img:first-of-type {
 section.s3 .insider .droite img:last-of-type {
   bottom: 20px;
   align-self: center;
+}
+
+section.s4 .carousel-container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.8vmax;
+  margin-top: 10vmax;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.s4 .carousel-container > button {
+  border: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+section.s4 .carousel-container > button:hover svg path {
+  stroke: #B8C9E1;
+}
+section.s4 .carousel-container .carousel-cont {
+  overflow: hidden;
+  width: 100%;
+}
+section.s4 .carousel-container .carousel-cont .carousel {
+  display: flex;
+  column-gap: 4vw;
+  margin: 2rem 0;
+  overflow: visible;
+  transition: 0.5s ease-in-out all;
+}
+section.s4 .carousel-container .carousel-cont .carousel .item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+  text-align: center;
+  flex: 0 0 21vw;
+  height: 30vmin;
+  justify-content: center;
+  text-decoration: none;
+  color: #00617F;
+  background: rgba(0, 97, 127, 0.3);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(184, 201, 225, 0.15);
+  padding: 2vmin;
+  border-radius: 2rem;
+  transition: all 0.5s;
+}
+section.s4 .carousel-container .carousel-cont .carousel .item .wp-post-image {
+  width: 10rem;
+  height: auto;
+}
+section.s4 .carousel-container .carousel-cont .carousel .item:hover {
+  background: rgba(0, 97, 127, 0.7);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  color: #131413;
 }
 
 section.s5 {
