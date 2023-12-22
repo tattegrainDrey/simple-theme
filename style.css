@@ -266,6 +266,17 @@ section.s4 .carousel-container .carousel-cont .carousel .item:hover {
 section.s5 {
   background-color: #00617F;
   color: #B8C9E1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.s5 > * {
+  font-size: 10vmin;
+  white-space: nowrap;
+}
+section.s5 span {
+  align-self: flex-end;
 }
 
 section.single {

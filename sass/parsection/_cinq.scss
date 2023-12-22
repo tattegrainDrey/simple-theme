@@ -1,0 +1,15 @@
+section.s5 {
+    background-color: $bleu;
+    color: $pale;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &>* {
+        font-size: 10vmin;
+        white-space: nowrap;
+    }
+    span {
+        align-self: flex-end;
+    }
+}
