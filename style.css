@@ -68,6 +68,15 @@ h2 {
   text-transform: uppercase;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #B8C9E1;
+}
+footer .min {
+  font-size: medium;
+}
+
 /************************* sections */
 section.s1 {
   display: grid;
