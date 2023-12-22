@@ -42,23 +42,19 @@ p, div {
     margin: 0;
     padding: 0;
 }
-
 body {
     overflow-x: hidden;
 }
-
 main {
     background: url("http://localhost/portfolio/wp-content/uploads/2023/12/doodad2.png");
     background-repeat: repeat;
     background-attachment: fixed;
 }
-
 section {    
     height: calc(100vh - 10vmax);
     width: calc(100vw - 12vmax);
     padding: 5vmax 6vmax;    
 }
-
 h2 {
     text-transform: uppercase;
 }

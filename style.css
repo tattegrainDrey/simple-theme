@@ -130,4 +130,69 @@ section.s2 .droite img:first-of-type {
 section.s2 .droite img:last-of-type {
   bottom: 20px;
   align-self: center;
+}
+
+section.s3 {
+  background-color: #00617F;
+  color: #B8C9E1;
+  height: fit-content;
+}
+section.s3 .insider {
+  display: flex;
+}
+section.s3 .insider .gauche {
+  width: 50vw;
+}
+section.s3 .insider .gauche h3 {
+  margin: 2vmin 0 1vmin;
+}
+section.s3 .insider .gauche .logo {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3vmin;
+  align-items: center;
+  text-align: center;
+}
+section.s3 .insider .gauche .logo figure img {
+  width: 10vmin;
+  filter: grayscale(100);
+  transition: all 0.5s;
+}
+section.s3 .insider .gauche .logo figure figcaption {
+  position: relative;
+  bottom: 50px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+section.s3 .insider .gauche .logo figure:hover img {
+  filter: none;
+}
+section.s3 .insider .gauche .logo figure:hover figcaption {
+  position: relative;
+  bottom: 0px;
+  opacity: 1;
+}
+section.s3 .insider .droite {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 15vw;
+}
+section.s3 .insider .droite img {
+  position: absolute;
+  max-width: 33vmax;
+}
+section.s3 .insider .droite img:first-of-type {
+  top: 20px;
+  rotate: -5deg;
+  align-self: center;
+}
+section.s3 .insider .droite img:last-of-type {
+  bottom: 20px;
+  align-self: center;
+}
+
+section.s5 {
+  background-color: #00617F;
+  color: #B8C9E1;
 }/*# sourceMappingURL=style.css.map */
