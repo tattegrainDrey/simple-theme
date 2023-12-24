@@ -9,7 +9,7 @@
 <main>
     <section class="s1">
         <h1>D.A. Tattegrain</h1>
-        <img src="http://localhost/portfolio/wp-content/uploads/2023/11/icon.png" alt="Photo de D.A. Tattegrain">
+        <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/cropped-icon.png" alt="Photo de D.A. Tattegrain">
         <div>
             <h2>Portfolio</h2>
             <p>Artiste et Étudiant en multimédia</p>
@@ -21,8 +21,8 @@
             <p>Une artiste de tous points, j’aime découvrir de nouvelles façons de m’exprimer. J’ai approfondi mes connaissances dans deux de mes plus grandes passions: la programmation et la réalisation de site web et de vidéo. Je suis impatiente de mettre en pratique mes nouvelles connaissances dans le monde professionnel.</p>
         </div>
         <div class="droite">
-            <img src="http://localhost/portfolio/wp-content/uploads/2023/10/ecovoyance-poster.png" alt="ecovoyance">
-            <img src="http://localhost/portfolio/wp-content/uploads/2023/10/lvdr.jpg" alt="lvdr">
+            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/yes2-scaled.jpg" alt="portrait dat">
+            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/MicrosoftTeams-image4.jpg" alt="landscape dat">
         </div>
     </section>
     <section class="s3">
@@ -33,35 +33,35 @@
                     <h3>Langues</h3>
                     <div class="logo">
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/cs.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/cs.png" alt="">
                             <figcaption>C Sharp</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/c.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/c.png" alt="">
                             <figcaption>C++</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/html.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/html.png" alt="">
                             <figcaption>HTML</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/css.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/css.png" alt="">
                             <figcaption>CSS</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/js.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/js.png" alt="">
                             <figcaption>Javascript</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/php.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/php.png" alt="">
                             <figcaption>Php</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/sass.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/sass.png" alt="">
                             <figcaption>Sass</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/sql.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/sql.png" alt="">
                             <figcaption>SQL</figcaption>
                         </figure>
                     </div>
@@ -70,39 +70,39 @@
                     <h3>Logiciels</h3>
                     <div class="logo">
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/accloud.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/accloud.png" alt="">
                             <figcaption>Creative Cloud</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/audacity.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/audacity.png" alt="">
                             <figcaption>Audacity</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/mysql.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/mysql.png" alt="">
                             <figcaption>My SQL</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/unity.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/unity.png" alt="">
                             <figcaption>Unity</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/wp.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/wp.png" alt="">
                             <figcaption>Wordpress</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/vs.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/vs.png" alt="">
                             <figcaption>Visual Studio</figcaption>
                         </figure>
                         <figure>
-                            <img src="http://localhost/portfolio/wp-content/uploads/2023/12/vsc.png" alt="">
+                            <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/vsc.png" alt="">
                             <figcaption>VS Code</figcaption>
                         </figure>
                     </div>
                 </div>
             </div>
             <div class="droite">
-                <img src="http://localhost/portfolio/wp-content/uploads/2023/10/ecovoyance-poster.png" alt="ecovoyance">
-                <img src="http://localhost/portfolio/wp-content/uploads/2023/10/lvdr.jpg" alt="lvdr">
+                <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/ecovoyance-poster.png" alt="ecovoyance">
+                <img src="http://djenahaat.sg-host.com/wp-content/uploads/2023/12/casque.jpg" alt="casque">
             </div>
         </div>
     </section>
