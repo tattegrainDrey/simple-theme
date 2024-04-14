@@ -8,13 +8,13 @@ add_action('wp_enqueue_scripts', 'enqueue_styles');
 
 
 /* -------------------------------------- Saving the menu */
-// function save_menu()
-// {
-//     register_nav_menus(array(
-//         'main-menu' => 'Header Menu'
-//     ));
-// }
-// add_action('init', 'save_menu', 0);
+function save_menu()
+{
+    register_nav_menus(array(
+        'main-menu' => 'Header Menu'
+    ));
+}
+add_action('init', 'save_menu', 0);
 
 /* -------------------------------------- theme support */
 add_theme_support('custom-logo', array(

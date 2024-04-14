@@ -12,3 +12,15 @@
 </head>
 
 <body>
+    <header>
+        <h1><a href="<?php get_site_url() ?>"><?php bloginfo('name') ?></a></h1>
+        <div>
+            <img src="https://audreytattegrain.ca/wp-content/uploads/2024/04/menu.svg" alt="search icon" class="icon">
+            <img src="https://audreytattegrain.ca/wp-content/uploads/2024/04/search.svg" alt="menu icon" class="icon">
+            <form action="" id="search">
+                <input type="search" name="search">
+                <input type="image" src="https://audreytattegrain.ca/wp-content/uploads/2024/04/send.svg">
+            </form>
+            <?php wp_nav_menu('main-menu') ?> 
+        </div>
+    </header>
