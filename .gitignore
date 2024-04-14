@@ -13,8 +13,10 @@
 /wp-includes/
 /license.txt
 /readme.html
+/readme.md
 /wp-*.php
 /xmlrpc.php
+
 
 # Configuration
 wp-config.php
