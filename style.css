@@ -16,6 +16,15 @@ footer {
   bottom: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(10vw + clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 2);
+}
+body > * {
+  padding: clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
+}
+
 header {
   display: flex;
   justify-content: space-between;
