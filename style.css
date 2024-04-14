@@ -11,6 +11,11 @@ License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: main-portfolio
 */
 /************************* bases */
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
