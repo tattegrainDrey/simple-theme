@@ -23,9 +23,9 @@
             </form>
             <?php wp_nav_menu(array(
                 'menu'                 => 'main-menu',
+                'menu_id'              => 'hamburger',
                 'container'            => 'ul',
-                'container_class'      => 'bigScreen',
-                'container_id'         => 'hamburger'
+                'container_class'      => 'bigScreen'
             )) ?> 
         </div>
     </header>
