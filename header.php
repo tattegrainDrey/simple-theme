@@ -38,7 +38,7 @@
 <body>
     <header>
         <h1><a href="<?php get_site_url() ?>"><?php bloginfo('name') ?></a></h1>
-        <div>
+        <div class="logos">
             <img onclick="magnifier()" src="https://audreytattegrain.ca/wp-content/uploads/2024/04/search.svg" alt="search icon" class="icon">
             <img onclick="hamburger()" src="https://audreytattegrain.ca/wp-content/uploads/2024/04/menu.svg" alt="menu icon" class="icon">
             <form action="" id="search">
