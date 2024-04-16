@@ -1,11 +1,9 @@
 <?php get_header() ?>
-<?php
-    // $args_port = array(
-    //     'category_name' => 'portfolio',
-    //     'posts_per_page' => -1, // Display all posts from the tag.
-    // );
-    // $query_3d = new WP_Query($args_port);
-?>
+<main class="front">
+    <?php
+        echo apply_filters( 'the_content', get_post('intro')->post_content );
+    ?>
+</main>
 
 
 <?php get_footer() ?>

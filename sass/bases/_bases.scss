@@ -20,8 +20,9 @@ $noir : #131413;
 /// Clamp inputs 
 
 footer {
-    position: absolute;
-    bottom: 0;
+    text-align: center;
+    padding-bottom: 0;
+    font-size: clamp(0.625rem, 0.5556rem + 0.3704vw, 1rem);
 }
 
 body {
