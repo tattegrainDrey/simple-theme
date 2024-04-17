@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<main class="front">
+<main class="intro">
     <?php
     $args = array(
         'post_name'      => 'intro',
@@ -9,7 +9,7 @@
     );
     $my_posts = get_posts($args);
     if ($my_posts) :
-        echo 'ID on the first post found ' . $my_posts[0]->post_content;
+        echo $my_posts[0]->post_content;
     endif;
     ?>
 </main>

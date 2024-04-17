@@ -12,8 +12,9 @@ Text Domain: main-portfolio
 */
 /************************* bases */
 footer {
-  position: absolute;
-  bottom: 0;
+  text-align: center;
+  padding-bottom: 0;
+  font-size: clamp(0.625rem, 0.5556rem + 0.3704vw, 1rem);
 }
 
 body {
@@ -97,4 +98,14 @@ header .logos ul li {
     width: 100%;
     column-gap: clamp(1rem, 2.353vw - 0.324rem, 2.5rem);
   }
+}
+
+.intro h2 {
+  margin-bottom: 0;
+}
+.intro .innerblocks-wrap {
+  gap: clamp(0.625rem, 0.864vw + 0.463rem, 1.5rem);
+}
+.intro .subscribe p {
+  margin-top: 0;
 }/*# sourceMappingURL=style.css.map */
