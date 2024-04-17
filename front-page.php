@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<main class="intro">
+<main class="front">
     <?php
         echo apply_filters('the_content', get_post(92)->post_content);
     ?>

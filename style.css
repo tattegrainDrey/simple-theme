@@ -11,19 +11,24 @@ License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: main-portfolio
 */
 /************************* bases */
-footer {
-  text-align: center;
-  padding-bottom: 0;
-  font-size: clamp(0.625rem, 0.5556rem + 0.3704vw, 1rem);
-}
-
 body {
   display: flex;
   flex-direction: column;
   margin-top: calc(10vw + clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 2);
 }
-body > * {
+body p {
+  font-size: clamp(1rem, 0.9074rem + 0.4938vw, 1.5rem);
+}
+body h5 {
+  font-size: clamp(1.25rem, 1.1343rem + 0.6173vw, 1.875rem);
+}
+body > *:not(footer) {
   padding: clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
+}
+body footer {
+  text-align: center;
+  padding: clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) 0 clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
+  font-size: clamp(0.625rem, 0.5556rem + 0.3704vw, 1rem);
 }
 
 header {
@@ -108,4 +113,11 @@ header .logos ul li {
 }
 .intro .subscribe p {
   margin-top: 0;
+}
+.intro .subscribe label {
+  font-size: clamp(1rem, 0.9074rem + 0.4938vw, 1.5rem);
+}
+.intro .subscribe button {
+  font-size: clamp(1rem, 0.9074rem + 0.4938vw, 1.5rem);
+  margin-left: 0;
 }/*# sourceMappingURL=style.css.map */
