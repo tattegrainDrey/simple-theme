@@ -1,0 +1,83 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: calc(100vw - clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 3);
+    height: 10vw;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h1 {
+        font-size: clamp(1.5625rem, 1.3889rem + 0.9259vw, 2.5rem);
+        font-weight: 500;
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        column-gap: clamp(0.75rem, 2.685vw - 0.971rem, 2.25rem);
+
+        img {
+            width: clamp(1rem, 2.099vw + 0.606rem, 3.125rem);
+            height: auto;
+
+            @media screen and (min-width: 900px) {
+                &:nth-of-type(2) {
+                    display: none;
+                }
+            }
+        }
+
+        &>*:not(img) {
+            padding: 0 clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
+            width: calc(100vw - clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 3);
+            height: clamp(1.5rem, 2.222vw + 1.083rem, 3.75rem);
+            position: absolute;
+            right: 0;
+            top: calc(clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 2 + 10vw);
+        }
+
+        form {
+            display: none;
+
+            input:nth-of-type(1) {
+                width: calc(100vw - clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 3);
+                height: clamp(1.5rem, 2.222vw + 1.083rem, 3.75rem);
+            }
+
+            input:nth-of-type(2) {
+                padding: 0 clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
+                height: clamp(1.5rem, 2.222vw + 1.083rem, 3.75rem);
+                position: absolute;
+                right: clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
+            }
+        }
+
+        ul {
+            display: none;
+            flex-direction: column;
+            row-gap: clamp(0.25rem, 2vw - 0.125rem, 1rem);
+            text-align: center;
+            list-style-type: none;
+            height: calc(clamp(1rem, 0.7222rem + 1.4815vw, 2.5rem) * 4 + clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem));
+
+            li {
+                font-size: clamp(1rem, 0.7222rem + 1.4815vw, 2.5rem);
+            }
+
+            @media screen and (min-width: 900px) {
+                display: flex;
+                align-items: center;
+                position: initial;
+                flex-direction: row;
+                width: 100%;
+                column-gap: clamp(1rem, 2.353vw - 0.324rem, 2.5rem);
+            }
+        }
+    }
+}

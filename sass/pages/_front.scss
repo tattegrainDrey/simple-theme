@@ -1,0 +1,25 @@
+.intro {
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .innerblocks-wrap {
+        gap: clamp(0.625rem, 0.864vw + 0.463rem, 1.5rem);
+    }
+
+    .subscribe {
+        p {
+            margin-top: 0;
+        }
+
+        label {
+            font-size: clamp(1rem, 0.9074rem + 0.4938vw, 1.5rem);
+        }
+
+        button {
+            font-size: clamp(1rem, 0.9074rem + 0.4938vw, 1.5rem);
+            margin-left: 0;
+        }
+    }
+
+}
