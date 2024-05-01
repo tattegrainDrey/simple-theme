@@ -11,6 +11,36 @@ License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: main-portfolio
 */
 /************************* bases */
+h1 {
+  font-size: clamp(1.875rem, 1.7014rem + 0.9259vw, 2.8125rem);
+  font-family: "Libre Baskerville", serif;
+  font-style: normal;
+  color: #131413;
+}
+h1 a {
+  color: #131413;
+}
+
+li {
+  font-size: clamp(1.125rem, 0.9861rem + 0.7407vw, 1.875rem);
+  font-family: "Libre Baskerville", serif;
+  font-style: normal;
+  color: #131413;
+}
+li a {
+  color: #131413;
+}
+li a:hover {
+  color: #B8C9E1;
+}
+li a:active {
+  color: #00617F;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
 html {
   margin: 0;
 }
@@ -35,6 +65,9 @@ header {
 }
 header h1 {
   font-size: clamp(1.875rem, 1.7014rem + 0.9259vw, 2.8125rem);
+}
+header a {
+  text-decoration: none;
 }
 header .logos {
   display: flex;

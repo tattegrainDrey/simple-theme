@@ -18,6 +18,40 @@ $noir : #131413;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////       HEADERS & TEXTS
 /// Clamp inputs 
+h1 {
+    font-size: clamp(1.875rem, 1.7014rem + 0.9259vw, 2.8125rem); //300-1920-30-45
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    color: $noir;
+    //specificity for header
+    a {
+        color: $noir;
+    }
+}
+
+li {
+    font-size: clamp(1.125rem, 0.9861rem + 0.7407vw, 1.875rem); //300-1920-18-20
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    color: $noir;
+
+    //specificity for header
+    a {
+        color: $noir;
+        &:hover {
+            color: $pale;   
+        }
+        &:active{
+            color: $bleu;
+        }
+    }
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////       RESETS
 html {
     margin: 0;
 

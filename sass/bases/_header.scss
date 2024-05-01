@@ -8,6 +8,10 @@ header {
         font-size: clamp(1.875rem, 1.7014rem + 0.9259vw, 2.8125rem); //300-1920-30-45
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .logos {
         display: flex;
         justify-content: flex-end;
