@@ -18,25 +18,17 @@ $noir : #131413;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////       HEADERS & TEXTS
 /// Clamp inputs 
+html {
+    margin: 0;
+
+    * {
+        margin: 0;
+    }
+}
+.nojq {
+    display: none;
+}
 body {
-    display: flex;
-    flex-direction: column;
-    margin-top: calc(10vw + clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem)*2);
-
-    p {
-        font-size: clamp(1rem, 0.9074rem + 0.4938vw, 1.5rem);
-    }
-    h5 {
-        font-size: clamp(1.25rem, 1.1343rem + 0.6173vw, 1.875rem);
-    }
-
-    &>*:not(footer) {
-        padding: clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
-    }
-
-    footer {
-        text-align: center;
-        padding: clamp(.625rem, .617vw + .509rem, 1.25rem) clamp(.625rem, .617vw + .509rem, 1.25rem) 0 clamp(.625rem, .617vw + .509rem, 1.25rem);
-        font-size: clamp(0.625rem, 0.5556rem + 0.3704vw, 1rem);
-    }
+    overflow-x: hidden;
+    margin: 0 clamp(0.625rem, 2.632vw - 0.033rem, 3.125rem); //10-50-400-1920-16
 }

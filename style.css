@@ -11,113 +11,98 @@ License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: main-portfolio
 */
 /************************* bases */
+html {
+  margin: 0;
+}
+html * {
+  margin: 0;
+}
+
+.nojq {
+  display: none;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  margin-top: calc(10vw + clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 2);
-}
-body p {
-  font-size: clamp(1rem, 0.9074rem + 0.4938vw, 1.5rem);
-}
-body h5 {
-  font-size: clamp(1.25rem, 1.1343rem + 0.6173vw, 1.875rem);
-}
-body > *:not(footer) {
-  padding: clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
-}
-body footer {
-  text-align: center;
-  padding: clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) 0 clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
-  font-size: clamp(0.625rem, 0.5556rem + 0.3704vw, 1rem);
+  overflow-x: hidden;
+  margin: 0 clamp(0.625rem, 2.632vw - 0.033rem, 3.125rem);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 0;
-  width: calc(100vw - clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 3);
-  height: 10vw;
-}
-header a {
-  text-decoration: none;
-  color: black;
+  height: clamp(3.125rem, 1.974vw + 2.632rem, 5rem);
 }
 header h1 {
-  font-size: clamp(1.5625rem, 1.3889rem + 0.9259vw, 2.5rem);
-  font-weight: 500;
+  font-size: clamp(1.875rem, 1.7014rem + 0.9259vw, 2.8125rem);
 }
 header .logos {
   display: flex;
-  align-items: center;
-  column-gap: clamp(0.75rem, 2.685vw - 0.971rem, 2.25rem);
+  justify-content: flex-end;
+  column-gap: clamp(0.313rem, 0.658vw + 0.148rem, 0.938rem);
 }
 header .logos img {
-  width: clamp(1rem, 2.099vw + 0.606rem, 3.125rem);
+  width: clamp(1.563rem, 0.329vw + 1.48rem, 1.875rem);
   height: auto;
 }
+header .logos > :not(img) {
+  display: flex;
+  position: absolute;
+  margin: clamp(3.125rem, 1.974vw + 2.632rem, 5rem) clamp(0.625rem, 2.632vw - 0.033rem, 3.125rem) 0;
+  z-index: 2;
+}
+header .logos > :not(img):has(input) {
+  display: none;
+  justify-content: center;
+  row-gap: clamp(1rem, 0.247vw + 0.954rem, 1.25rem);
+}
+header .logos > :not(img):has(input) input:nth-of-type(1) {
+  width: clamp(14.688rem, 87.963vw - 1.806rem, 103.75rem);
+}
+header .logos > :not(img):has(input) input:nth-of-type(2) {
+  width: clamp(1.563rem, 1.645vw + 1.151rem, 3.125rem);
+}
+header .logos > :not(img):has(li) {
+  flex-direction: column;
+  align-items: center;
+  width: clamp(16.25rem, 99.383vw - 2.384rem, 116.875rem);
+  height: clamp(7.5rem, 11.111vw + 5.417rem, 18.75rem);
+  list-style-type: none;
+  padding: 0;
+  row-gap: clamp(1rem, 0.247vw + 0.954rem, 1.25rem);
+}
+header .logos > :not(img):has(li) li {
+  font-size: clamp(1.125rem, 0.9861rem + 0.7407vw, 1.875rem);
+}
 @media screen and (min-width: 900px) {
+  header .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   header .logos img:nth-of-type(2) {
     display: none;
   }
-}
-header .logos > *:not(img) {
-  padding: 0 clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
-  width: calc(100vw - clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 3);
-  height: clamp(1.5rem, 2.222vw + 1.083rem, 3.75rem);
-  position: absolute;
-  right: 0;
-  top: calc(clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 2 + 10vw);
-}
-header .logos form {
-  display: none;
-}
-header .logos form input:nth-of-type(1) {
-  width: calc(100vw - clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem) * 3);
-  height: clamp(1.5rem, 2.222vw + 1.083rem, 3.75rem);
-}
-header .logos form input:nth-of-type(2) {
-  padding: 0 clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
-  height: clamp(1.5rem, 2.222vw + 1.083rem, 3.75rem);
-  position: absolute;
-  right: clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem);
-}
-header .logos ul {
-  display: none;
-  flex-direction: column;
-  row-gap: clamp(0.25rem, 2vw - 0.125rem, 1rem);
-  text-align: center;
-  list-style-type: none;
-  height: calc(clamp(1rem, 0.7222rem + 1.4815vw, 2.5rem) * 4 + clamp(0.625rem, 0.617vw + 0.509rem, 1.25rem));
-}
-header .logos ul li {
-  font-size: clamp(1rem, 0.7222rem + 1.4815vw, 2.5rem);
-}
-@media screen and (min-width: 900px) {
-  header .logos ul {
-    display: flex;
-    align-items: center;
-    position: initial;
-    flex-direction: row;
-    width: 100%;
-    column-gap: clamp(1rem, 2.353vw - 0.324rem, 2.5rem);
+  header .logos > :not(img) {
+    position: unset;
+    margin: unset;
   }
-}
-
-.intro h2 {
-  margin-bottom: 0;
-}
-.intro .innerblocks-wrap {
-  gap: clamp(0.625rem, 0.864vw + 0.463rem, 1.5rem);
-}
-.intro .subscribe p {
-  margin-top: 0;
-}
-.intro .subscribe label {
-  font-size: clamp(1rem, 0.9074rem + 0.4938vw, 1.5rem);
-}
-.intro .subscribe button {
-  font-size: clamp(1rem, 0.9074rem + 0.4938vw, 1.5rem);
-  margin-left: 0;
+  header .logos > :not(img):has(input) {
+    order: -1;
+  }
+  header .logos > :not(img):has(input) input:nth-of-type(1) {
+    width: clamp(6.25rem, 13.158vw + 2.961rem, 18.75rem);
+  }
+  header .logos > :not(img):has(input) input:nth-of-type(2) {
+    width: clamp(1.563rem, 0.329vw + 1.48rem, 1.875rem);
+    height: auto;
+  }
+  header .logos > :not(img):has(li) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: clamp(1rem, 0.247vw + 0.954rem, 1.25rem);
+    width: unset;
+    height: unset;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
